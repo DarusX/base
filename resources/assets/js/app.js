@@ -16,7 +16,9 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
-Vue.component('user', require('./components/User.vue'));
+Vue.component('users', require('./components/Users.vue'));
+Vue.component('roles', require('./components/Roles.vue'));
+Vue.component('role-form', require('./components/RoleForm.vue'));
 
 const app = new Vue({
     el: '#app'

@@ -11,9 +11,17 @@
 |
 */
 
+Route::get('role/json', 'RoleController@all');
+Route::resources([
+    'role' => 'RoleController'
+]);
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
